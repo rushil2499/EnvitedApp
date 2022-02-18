@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en" class="h-100">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Event Form</title>
+
+
+    <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+
+    <!-- Custom styles for this template -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body class="d-flex text-center text-black bg-white">
+
+    <div class="form cover-container d-flex p-3 mx-auto flex-column">
+
+        <div class="formcen" id="root"></div>
+
+        <script type="text/babel">
+
+                    function MyForm() {
+                return (
+                    <form>
+                        <label>Event Name:
+                            <input type="text" />
+                        </label>
+                        <br />
+                        <label>Name of the Host:
+                            <input type="text" />
+                        </label>
+                        <br />
+
+                        <label>Date:
+                            <input type="text" />
+                        </label>
+                        <br />
+
+                        <label>Start Time:
+                            <input type="text" />
+                        </label>
+                        <br />
+
+                        <label>End Time:
+                            <input type="text" />
+                        </label>
+                        <br />
+
+                        <label>Location:
+                            <input type="text" />
+                        </label>
+
+                    </form>
+                )
+            }
+
+            ReactDOM.render(<MyForm />, document.getElementById('root'));
+        </script>
+
+        <a href="event.html"><button>Create an Event App</button></a>
+        
+    </div>
+</body>
+</html>
